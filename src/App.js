@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useCursorTrail } from "./hooks/useCursorTrail";
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Education } from "./components/Education";
+import { Skills } from "./components/Skills";
+import { Experience } from "./components/Experience";
+import { Projects } from "./components/Projects";
+import { Resume } from "./components/Resume";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
+  useCursorTrail();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Banner />
+      <Education />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Resume />
+      <Contact />
+      <Footer />
     </div>
   );
 }
