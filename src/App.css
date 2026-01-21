@@ -499,6 +499,155 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #4A2FBD;
   font-weight: 600;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .education {
+    padding: 60px 20px;
+  }
+  
+  .education h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .education p {
+    font-size: 16px;
+    width: 90%;
+    margin: 10px auto 40px auto;
+  }
+  
+  .education-timeline {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+  
+  .education-timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 15px;
+  }
+  
+  .timeline-year {
+    position: static;
+    transform: none;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .timeline-dot {
+    left: 20px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+  }
+  
+  .timeline-body {
+    padding: 20px 20px;
+    border-radius: 15px;
+  }
+  
+  .timeline-body h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-body p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .education {
+    padding: 40px 15px;
+  }
+  
+  .education h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .education p {
+    font-size: 14px;
+    width: 95%;
+    margin: 8px auto 30px auto;
+    line-height: 1.4em;
+  }
+  
+  .education-timeline {
+    padding: 10px 0;
+  }
+  
+  .education-timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 30px;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    padding-left: 60px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  
+  .timeline-year {
+    font-size: 11px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-dot {
+    left: 15px;
+    width: 14px;
+    height: 14px;
+    border-width: 2px;
+    box-shadow: 0 0 0 3px rgba(170, 54, 124, 0.2);
+  }
+  
+  .timeline-body {
+    padding: 16px 16px;
+    border-radius: 12px;
+  }
+  
+  .timeline-body h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .timeline-body p {
+    font-size: 13px;
+    margin: 6px 0;
+  }
+  
+  .timeline-body .institution {
+    font-size: 13px;
+  }
+  
+  .timeline-body .score {
+    font-size: 12px;
+  }
+}
+
 .timeline-body .score {
   color: #FFD700;
   font-weight: 700;
